@@ -31,4 +31,9 @@ public class MenuControl : MonoBehaviour
     {
         SceneManager.LoadScene(3);
     }
+
+    public void BackButton()
+    {
+        SceneManager.LoadScene(0);
+    }
 }
