@@ -20,7 +20,7 @@ public class Equipment : MonoBehaviour
     //scripts
     private Stitcher stitcher;
     //ints
-    private int totalEquipmentSlots; 
+    private int totalEquipmentSlots;
     #endregion
 
     #region Monobehaviour
@@ -38,19 +38,20 @@ public class Equipment : MonoBehaviour
             equippedItems.Add(new Item());
         }
 
-        /*AddEquipmentToList(0); //Legs
+        AddEquipmentToList(0); //Legs
         AddEquipmentToList(1); //Chest
         AddEquipmentToList(2); //Hair 
         AddEquipmentToList(3); //Beard 
         AddEquipmentToList(4); //Mustache
         //AddEquipmentToList(5); //HandRight
         AddEquipmentToList(5); //ChestArmor
-        AddEquipmentToList(6); //Feet*/
+        AddEquipmentToList(6); //Feet
     }
 
     public void AddEquipmentToList(int id)
     {
-        for(int i = 0; i < equippedItems.Count; i++)
+        print(equippedItems.Count);
+        for (int i = 0; i < equippedItems.Count; i++)
         {
             if(equippedItems[id].ItemID == -1)
             {
