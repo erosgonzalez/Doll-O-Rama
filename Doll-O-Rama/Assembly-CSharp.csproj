@@ -60,8 +60,8 @@
     </Reference>
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\Scenes\ButtonControls.cs" />
     <Compile Include="Assets\Scenes\CharacterSelection.cs" />
-    <Compile Include="Assets\Scenes\MenuControl.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/eguido/Desktop/Doll-O-Rama/Doll-O-Rama/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
     </Reference>
