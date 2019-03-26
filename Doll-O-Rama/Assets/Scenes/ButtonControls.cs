@@ -6,11 +6,13 @@ using UnityEngine.EventSystems;
 
 public class ButtonControls : MonoBehaviour
 {
-    // Start is called before the first frame update
-    //void Start()
-    //{
+    public GameObject panelSliders;
 
-    //}
+    //Start is called before the first frame update
+    void Start()
+    {
+        panelSliders.gameObject.SetActive(false);
+    }
 
     //// Update is called once per frame
     //void Update()
@@ -48,6 +50,7 @@ public class ButtonControls : MonoBehaviour
     {
         panelBack.gameObject.SetActive(false);
         panelGenderSelect.gameObject.SetActive(false);
+        panelSliders.gameObject.SetActive(true);
     }
 
     //public void onRotateLeftDown(PointerEventData eventData)
