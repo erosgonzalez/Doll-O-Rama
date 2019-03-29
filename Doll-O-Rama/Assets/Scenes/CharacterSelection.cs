@@ -6,6 +6,9 @@ public class CharacterSelection : MonoBehaviour
 {
     private List<GameObject> models;
     private int selectionIndex = 0;
+    private float speed = 50f;
+
+    private bool rotateLeft = false, rotateRight = false;
 
     private void Start()
     {
@@ -34,9 +37,10 @@ public class CharacterSelection : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetMouseButton(0))
-        {
-            transform.Rotate(new Vector3(0.0f, Input.GetAxis("Mouse X")));
-        }
+        if (rotateRight)
+            transform.Rotate(Vector3.up * speed * Time.deltaTime);
+
+        if (rotateLeft)
+            transform.Rotate(-Vector3.up * speed * Time.deltaTime);
     }
 }
