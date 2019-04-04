@@ -1,19 +1,14 @@
-# Exported from Fuse 2017.1.0
+# Blender MTL File: 'None'
+# Material Count: 1
 
 newmtl Body
-illum 4 
-Kd 1.00 1.00 1.00 
-Tf 1.00 1.00 1.00 
-Ni 1.00 
-Ks 1.00 1.00 1.00 
-Ns 512 
-adobe_reflectivity 0.04 
-adobe_bump_strength 0.0 
-d 1.0 
-
-map_d AsianFem1_Body_Opacity.png
-map_Kd AsianFem1_Body_Diffuse.png
-adobe_map_normal AsianFem1_Body_Normal.png
-map_Ks AsianFem1_Body_Specular.png
-adobe_map_shininess AsianFem1_Body_Gloss.png
-
+Ns 511.764706
+Ka 1.000000 1.000000 1.000000
+Kd 0.800000 0.800000 0.800000
+Ks 1.000000 1.000000 1.000000
+Ke 0.000000 0.000000 0.000000
+Ni 1.000000
+d 1.000000
+illum 2
+map_Kd AsianFem1\\AsianFem1_Body_Diffuse.png
+map_Ks AsianFem1\\AsianFem1_Body_Specular.png
