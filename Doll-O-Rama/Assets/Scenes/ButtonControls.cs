@@ -7,11 +7,13 @@ using UnityEngine.EventSystems;
 public class ButtonControls : MonoBehaviour
 {
     public GameObject panelSliders;
+    public GameObject panelClothes;
 
     //Start is called before the first frame update
     void Start()
     {
         panelSliders.gameObject.SetActive(false);
+        panelClothes.gameObject.SetActive(false);
     }
 
     //// Update is called once per frame
@@ -51,6 +53,23 @@ public class ButtonControls : MonoBehaviour
         panelBack.gameObject.SetActive(false);
         panelGenderSelect.gameObject.SetActive(false);
         panelSliders.gameObject.SetActive(true);
+    }
+
+    public void onConfirmButtonClothes()
+    {
+        panelSliders.gameObject.SetActive(false);
+        panelClothes.gameObject.SetActive(true);
+
+        //panelBack.gameObject.SetActive(false);
+        //panelGenderSelect.gameObject.SetActive(false);
+        //panelSliders.gameObject.SetActive(true);
+    }
+
+    public SkinnedMeshRenderer femModel;
+    public void SetCheekSlider(float sliderVal)
+    {
+        femModel.SetBlendShapeWeight(7, sliderVal);
+        femModel.SetBlendShapeWeight(0, -sliderVal);
     }
 
     //public void onRotateLeftDown(PointerEventData eventData)
