@@ -66,6 +66,7 @@
     <Compile Include="Assets\Scripts\BlendShapeSlider.cs" />
     <Compile Include="Assets\Scripts\CharacterCustomization.cs" />
     <Compile Include="Assets\Scripts\ClothesPicker.cs" />
+    <Compile Include="Assets\Scripts\FollowBones.cs" />
     <Compile Include="Assets\Scripts\Singleton.cs" />
     <Reference Include="Unity.TextMeshPro.Editor">
       <HintPath>/Users/ErosGonzalez/Desktop/Doll-O-Rama/Doll-O-Rama/Library/ScriptAssemblies/Unity.TextMeshPro.Editor.dll</HintPath>
