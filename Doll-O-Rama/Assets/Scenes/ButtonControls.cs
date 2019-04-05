@@ -8,12 +8,14 @@ public class ButtonControls : MonoBehaviour
 {
     public GameObject panelSliders;
     public GameObject panelClothes;
+    public GameObject panelShirts;
 
     //Start is called before the first frame update
     void Start()
     {
         panelSliders.gameObject.SetActive(false);
         panelClothes.gameObject.SetActive(false);
+        panelShirts.gameObject.SetActive(false);
     }
 
     //// Update is called once per frame
@@ -63,6 +65,11 @@ public class ButtonControls : MonoBehaviour
         //panelBack.gameObject.SetActive(false);
         //panelGenderSelect.gameObject.SetActive(false);
         //panelSliders.gameObject.SetActive(true);
+    }
+
+    public void onConfirmShirts(){
+        panelClothes.gameObject.SetActive(false);
+        panelShirts.gameObject.SetActive(true);
     }
 
     public SkinnedMeshRenderer femModel;
